@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -9,7 +11,7 @@ public class Player : MonoBehaviour
     public float speed;
     public float maxHeight;
     public float minHeight;
-
+    public int health = 5;
     void Start()
     {
         
@@ -17,6 +19,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (health <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight)
@@ -29,4 +35,5 @@ public class Player : MonoBehaviour
             
         }
     }
+
 }
