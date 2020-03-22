@@ -287,6 +287,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Yincrement: 2
-  speed: 10
-  maxHeight: 5
-  minHeight: -5
+  speed: 40
+  maxHeight: 3
+  minHeight: -3
