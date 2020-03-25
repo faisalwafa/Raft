@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public float maxHeight;
     public float minHeight;
     public int health = 5;
+    public int scorePoint = 0;
     void Start()
     {
         playerInventoryDisplay = GetComponent<PlayerInventoryDisplay>();
@@ -44,6 +45,13 @@ public class Player : MonoBehaviour
             // Instantiate(effect, transform.position, Quaternion.identity);
             health -= other.GetComponent<Obstacle>().damage;
             playerInventoryDisplay.updateHealthText(health);
+
+            Destroy(other.gameObject);
+        }else if (other.CompareTag("Objective"))
+        {
+            scorePoint += other.GetComponent<Objective>().score;
+            // playerInventoryDisplay.updateScoreText(scorePoint);
+            Debug.Log(scorePoint);
 
             Destroy(other.gameObject);
         }
