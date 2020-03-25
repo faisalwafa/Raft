@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class SpawnerObstacle : MonoBehaviour
 {
     public GameObject[] obstaclePatterns;
     private float timeBtwnSpawn;
