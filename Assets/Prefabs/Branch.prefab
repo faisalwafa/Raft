@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 58557733703264346}
   m_Layer: 0
   m_Name: Branch
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +95,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 3
-  effect: {fileID: 3313068253345450712, guid: 738ac617765b05742bf1775bfcb3dd98, type: 3}
 --- !u!58 &58557733703264346
 CircleCollider2D:
   m_ObjectHideFlags: 0
