@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Objective : MonoBehaviour
 {
-    public int score = 1;
-
+    public int score;
     public float speed;
 
     // Update is called once per frame
@@ -13,4 +12,6 @@ public class Objective : MonoBehaviour
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
     }
+
+    
 }

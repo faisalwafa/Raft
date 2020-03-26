@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public float minHeight;
     public int health = 5;
     public int scorePoint = 0;
+    
     void Start()
     {
         playerInventoryDisplay = GetComponent<PlayerInventoryDisplay>();
@@ -41,8 +42,6 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Obstacle"))
         {
-            // camAnim.SetTrigger("shake");
-            // Instantiate(effect, transform.position, Quaternion.identity);
             health -= other.GetComponent<Obstacle>().damage;
             playerInventoryDisplay.updateHealthText(health);
 
@@ -50,8 +49,7 @@ public class Player : MonoBehaviour
         }else if (other.CompareTag("Objective"))
         {
             scorePoint += other.GetComponent<Objective>().score;
-            // playerInventoryDisplay.updateScoreText(scorePoint);
-            Debug.Log(scorePoint);
+            playerInventoryDisplay.updateScoreText(scorePoint);
 
             Destroy(other.gameObject);
         }
