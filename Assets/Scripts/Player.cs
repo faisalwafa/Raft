@@ -55,8 +55,7 @@ public class Player : MonoBehaviour
         }else if (other.CompareTag("Objective"))
         {
             scorePoint += other.GetComponent<Objective>().score;
-            // playerInventoryDisplay.updateScoreText(scorePoint);
-            Debug.Log(scorePoint);
+            playerInventoryDisplay.updateScoreText(scorePoint);
 
             Destroy(other.gameObject);
         }
