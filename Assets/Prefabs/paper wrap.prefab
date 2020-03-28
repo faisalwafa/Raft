@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3559882549358385921}
   - component: {fileID: 5441426710583311585}
   - component: {fileID: 7151384649099823943}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: paper wrap
   m_TagString: Objective
   m_Icon: {fileID: 0}
@@ -67,8 +67,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -901586279
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2804ed0e5e9d29b4da896f5f42f16772, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

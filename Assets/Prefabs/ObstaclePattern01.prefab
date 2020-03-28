@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 613634549507895761}
   - component: {fileID: 81584872594449988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpawnPoint01
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3627090671707408337}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ObstaclePattern01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8731387434307988603}
   - component: {fileID: 7372029591200180189}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpawnPoint02
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

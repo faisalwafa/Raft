@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 793067545458007695}
   - component: {fileID: 5516064432865524220}
   - component: {fileID: 61384800337346550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plastic glass
   m_TagString: Objective
   m_Icon: {fileID: 0}
@@ -67,8 +67,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -901586279
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3da979aae4386484a916206afb9f6754, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -95,7 +95,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 3
   speed: 4
-  effect: {fileID: 3313068253345450712, guid: 738ac617765b05742bf1775bfcb3dd98, type: 3}
 --- !u!61 &61384800337346550
 BoxCollider2D:
   m_ObjectHideFlags: 0

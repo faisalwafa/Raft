@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8681053246640808172}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ObjectivePattern1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8681053246865085401}
   - component: {fileID: 8681053246865085406}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpawnObjectivePoint02
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8681053247903009703}
   - component: {fileID: 8681053247903009700}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpawnObjectivePoint01
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
