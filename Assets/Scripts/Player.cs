@@ -29,6 +29,10 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+        if (scorePoint == 15)
+        {
+            SceneManager.LoadScene("LevelCompleted");
+        }
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight)
@@ -49,11 +53,11 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            camAnim.SetTrigger("shake");
             health -= other.GetComponent<Obstacle>().damage;
             playerInventoryDisplay.updateHealthText(health);
 
             Destroy(other.gameObject);
+            camAnim.SetTrigger("shake");
         }
         else if (other.CompareTag("Objective"))
         {
