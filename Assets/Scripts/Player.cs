@@ -35,16 +35,18 @@ public class Player : MonoBehaviour
         {
             Instantiate(effect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y + Yincrement);
-            
-        } else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight)
+
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight)
         {
             Instantiate(effect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y - Yincrement);
-            
+
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.CompareTag("Obstacle"))
         {
             camAnim.SetTrigger("shake");
@@ -52,7 +54,8 @@ public class Player : MonoBehaviour
             playerInventoryDisplay.updateHealthText(health);
 
             Destroy(other.gameObject);
-        }else if (other.CompareTag("Objective"))
+        }
+        else if (other.CompareTag("Objective"))
         {
             scorePoint += other.GetComponent<Objective>().score;
             playerInventoryDisplay.updateScoreText(scorePoint);
