@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
 
     public GameObject effect;
     public Animator camAnim;
+    public GameObject gameOver;
 
     void Start()
     {
@@ -27,9 +28,10 @@ public class Player : MonoBehaviour
     {
         if (health <= 0)
         {
-            SceneManager.LoadScene("GameOver");
+            gameOver.SetActive(true);
+            Destroy(gameObject);
         }
-        if (scorePoint == 15)
+        if (scorePoint >= 15)
         {
             SceneManager.LoadScene("LevelCompleted");
         }
